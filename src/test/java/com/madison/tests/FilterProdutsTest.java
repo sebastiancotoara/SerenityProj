@@ -18,13 +18,14 @@ public class FilterProdutsTest {
     public FilterMadisonProductsSteps madisonSteps;
 
     @Before
-    public void maximPage(){
+    public void maximPage() {
         driver.manage().window().maximize();
     }
 
     @Test
-    public void filterMadisonProducts(){
+    public void filterMadisonProducts() {
         madisonSteps.navigateToMadisonHomePage();
         madisonSteps.navigateToRandomCategoryPage();
+        madisonSteps.filterProductsByPrice();
     }
 }

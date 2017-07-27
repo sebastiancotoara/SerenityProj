@@ -6,15 +6,20 @@ import net.thucydides.core.annotations.Step;
 
 public class FilterMadisonProductsSteps {
     private MadisonHomePage madisonHomePage;
-    private ProductsPage menNewArrivalsPage;
+    private ProductsPage productsPage;
 
     @Step
-    public void navigateToMadisonHomePage(){
+    public void navigateToMadisonHomePage() {
         madisonHomePage.open();
     }
 
     @Step
-    public void navigateToRandomCategoryPage(){
+    public void navigateToRandomCategoryPage() {
         madisonHomePage.navigateToRandomCategoryPage();
+    }
+
+    @Step
+    public void filterProductsByPrice(){
+        productsPage.filterProductsByPrice();
     }
 }
