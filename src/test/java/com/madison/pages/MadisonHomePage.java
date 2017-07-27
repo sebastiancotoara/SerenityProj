@@ -31,7 +31,7 @@ public class MadisonHomePage extends PageObject {
         waitFor(10000);
 
         if (randomProdMenu < 5) {
-            int randomSubcategory = random.nextInt((subcategoryMenu.size() - 1 + 1) + 1);
+            int randomSubcategory = random.nextInt(subcategoryMenu.size() - 1);
             Actions hoverOverSubCateg = builder.moveToElement(subcategoryMenu.get(randomSubcategory));
             hoverOverSubCateg.perform();
             waitFor(10000);

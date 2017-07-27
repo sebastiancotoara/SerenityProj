@@ -10,14 +10,19 @@ import java.util.Random;
 
 public class ProductsPage extends PageObject {
 
-    Random random;
-    Actions builder;
-
-    @FindBy(css = ".odd li .price")
+    @FindBy(css = ".price:first-child")
     private List<WebElement> prices;
 
     public void filterProductsByPrice() {
-        int randomPrice = random.nextInt(prices.size() - 1);
-        builder.moveToElement(prices.get(randomPrice));
+        Random random = new Random();
+            int randomPrice = random.nextInt(prices.size() - 1);
+        System.out.println(randomPrice);
+            System.out.println(prices.get(randomPrice).getText());
+            prices.get(randomPrice).click();
+            waitFor(10000);
+    }
+
+    public void filterProductsByColor(){
+
     }
 }
