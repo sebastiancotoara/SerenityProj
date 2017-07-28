@@ -27,5 +27,11 @@ public class FilterProdutsTest {
         madisonSteps.navigateToMadisonHomePage();
         madisonSteps.navigateToRandomCategoryPage();
         madisonSteps.filterProductsByPrice();
+        madisonSteps.filterProductsByColor();
+        madisonSteps.filterProductsByFit();
+        madisonSteps.filterProductsByGender();
+        madisonSteps.filterProductsByOccasion();
+        madisonSteps.filterProductsByType();
+        madisonSteps.filterProductsBySize();
     }
 }

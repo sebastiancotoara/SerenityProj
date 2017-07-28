@@ -22,4 +22,34 @@ public class FilterMadisonProductsSteps {
     public void filterProductsByPrice(){
         productsPage.filterProductsByPrice();
     }
+
+    @Step
+    public void filterProductsByColor(){
+        productsPage.filterProductsByColor();
+    }
+
+    @Step
+    public void filterProductsByOccasion(){
+        productsPage.filterProductsByOccasion();
+    }
+
+    @Step
+    public void filterProductsBySize(){
+        productsPage.filterProductsBySize();
+    }
+
+    @Step
+    public void filterProductsByFit(){
+        productsPage.filterProductsByFit();
+    }
+
+    @Step
+    public void filterProductsByType(){
+        productsPage.filterProductsByType();
+    }
+
+    @Step
+    public void filterProductsByGender(){
+        productsPage.filterProductsByGender();
+    }
 }
